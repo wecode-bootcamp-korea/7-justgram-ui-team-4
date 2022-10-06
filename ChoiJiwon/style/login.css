@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+#box {
+  width: 350px;
+  height: 395.33px;
+  border: solid 1px #dbdbdb;
+  border-radius: 1px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+#errmsg{
+  font-size: 10px;
+  color: #ef4a4a;
+  margin-bottom: 90px;
+
+}
+#box > h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+form {
+  text-align: center;
+}
+
+form > input,
+button {
+  width: 266px;
+  height: 36px;
+  text-align: left;
+  border-radius: 3px;
+
+}
+
+.writeArea {
+  margin-top: 6px;
+  border: solid 1px #dbdbdb;
+  font-size: 12px;
+  padding: 9px 8px 7px 8px;
+  background-color: #fafafa;
+}
+
+.writeArea::placeholder {
+  color: #8e8e8e;
+}
+
+.writeArea:focus {
+  outline: 1px solid #808080;
+}
+
+.submit {
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: #0095f6;
+  color: white;
+  font-weight: bold;
+  padding: 5px 9px;
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+.submit:disabled {
+  cursor: default;
+  background-color: #b2dffc;
+}
+
+#wrong {
+
+  margin-top: 100px;
+  text-decoration: none;
+  color: #00376b;
+  font-size: 11.94px;
+  font-weight: 600;
+}
