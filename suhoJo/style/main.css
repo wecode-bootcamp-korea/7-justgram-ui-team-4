@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+}
+.displayFlexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+.headerWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+.instaLogo {
+  height: 25px;
+  padding-right: 10px;
+  border-right: 2px solid black;
+}
+.justgramWord {
+  margin-left: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+.headerSearch {
+  width: 200px;
+  height: 25px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+.search {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 0;
+  background-color: #fafafa;
+}
+.menuIcon {
+  height: 25px;
+  padding: 0 10px;
+}
+.feed {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.feedWrap {
+  width: 400px;
+  height: 110vh;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+.feedProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profileImg {
+  border-radius: 100%;
+  width: 30px;
+  margin-right: 15px;
+}
+.moreImg {
+  height: 15px;
+}
+.feedMain {
+  background-image: url(/체스.jpeg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.feedMenubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.feedMenuIconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bookmarkIcon {
+  margin-right: 10px;
+}
+.feedMenuIcon {
+  height: 25px;
+  margin-left: 10px;
+}
+.feedRecomment {
+  height: 100px;
+  border-bottom: 1px solid lightgray;
+}
+.likeNumber {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.likeProfileImg {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+.likeWho {
+  margin-left: 10px;
+  font-size: 13px;
+}
+.comment {
+  height: 15px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.writtenRecomment {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+.recomment {
+  display: flex;
+  margin-top: 10px;
+  padding-left: 5px;
+  height: 30px;
+}
+.recommentInput {
+  width: 90%;
+  border: none;
+}
+.recommentInputBtn {
+  width: 10%;
+  border: none;
+  background-color: white;
+  color: rgba(136, 227, 227, 0.844);
+}
