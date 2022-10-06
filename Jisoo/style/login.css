@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 200px;
+  cursor: default;
+}
+#login {
+  border: 1px solid darkgray;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  height:400px;
+  margin: auto;
+}
+
+.login__logo {
+  font-family: 'Hi Melody', cursive;
+  font-size: 40px;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.id{
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  background-color: lightgray;
+  outline-color: gray;
+}
+
+.pw {
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  background-color: lightgray;
+  outline-color: gray;
+}
+
+.login__ID {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 0 40px 6px;
+}
+
+.login_PW {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 0 40px 6px;
+}
+
+.login__btn {
+  background-color: skyblue; 
+  border: 1px solid gray; 
+  color: white; 
+  padding: 10px 24px;
+  margin-top: 20px;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  width: 292px;
+  border-radius: 4px;
+}
+
+.offBtn {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.login__btn button:hover {
+  opacity: 1
+}
+
+.login__lost a {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 80px;
+  margin-left: 110px;
+  text-decoration: none;
+  color: rgb(19, 19, 117);
+}
