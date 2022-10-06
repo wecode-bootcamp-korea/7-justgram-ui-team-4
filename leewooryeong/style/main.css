@@ -51,6 +51,7 @@ header .search input[type="text"] {
     background-color: #fafafa;
     border-radius: 3px;
     outline: none;
+    text-align: center;
 }
 
 header .myMenu {
@@ -98,8 +99,9 @@ header .myMenu img {
 }
 
 .feed .feed__img img {
-    width: 700px;
+    width: 100%;
     height: 700px;
+    object-fit: cover;
 }
 
 .feed .feed__menu {
@@ -158,6 +160,11 @@ header .myMenu img {
 
 .feed .feed__comment .new__comment .moreComments {
     display: inline-block;
+}
+
+.feed .feed__comment .new__comment .commentLi {
+    display: flex;
+    list-style: none;
 }
 
 .feed .feed__comment .comment .time {
