@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./js/login.js"></script>
+    <link rel="stylesheet" href="./style/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="loginPage">
+      <div id="headBox"><span>justgram</span></div>
+      <div id="inputBox">
+        <form id="inputBoxForm">
+          <input
+            type="text"
+            id="inputId"
+            placeholder="  전화번호, 사용자 이름 또는 이메일"
+          />
+          <input type="password" id="inputPassword" placeholder="  비밀번호" />
+          <button disabled id="loginBtn">로그인</button>
+          <span id="loginFailArelt" class="hidden"
+            >아이디 또는 비밀번호가 옳바르지 않습니다</span
+          >
+        </form>
+      </div>
+      <div id="forgetPassword"><span>비밀번호를 잊으셨나요?</span></div>
+    </section>
+  </body>
+</html>
