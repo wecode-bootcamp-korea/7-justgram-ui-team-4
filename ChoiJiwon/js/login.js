@@ -12,14 +12,18 @@ const login = () => {
   loginBtn.disabled = input[0].value && input[1].value ? false : true;
 };
 
-//add event each element
+/**
+ * recognize if keycode is Enter or not, (if enter)=> enter getValue func and distinguish if pw/id is correct or not.
+ * (else)when the user writes, the login button gonna active.
+ */
 for (let element of input) {
-  element.addEventListener("keyup", login);
+  element.addEventListener("keyup", (event) => {
+    event.code==="Enter"?getValue():login();
+  });
 }
 
 /**
- * 올바른 아이디 비밀번호로 받아오고 있는지
- * 아이디 조건 덧붙이기 
+ * compare with id&&pw if same value with accounts in data.js
  */
 function getValue() {
   if (ids.includes(input[0].value)) {

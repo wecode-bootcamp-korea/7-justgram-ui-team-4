@@ -23,25 +23,29 @@ const comment = () => {
   });
 };
 
-//키보드 칠때 게시 글씨 활성화 되게
-for (let element of write) {
-  element.addEventListener("keyup", comment);
+//write comment with writer + content
+function writeComment() {
+  let writer = username;
+  writearr.forEach((element, idx) => {
+    var comment = `<span><b>${writer} </b>${element.value}</span><br>`;
+    if (element.value) {
+      commentArea[idx].innerHTML += comment;
+      element.value = " ";
+    }
+  });
 }
 
-
-//enter 치고 넘어가게 
-
-//클릭 하면 댓글 써지게 => 콜백 함수 따로 떼기 
-for (let element of commentBtn) {
-  element.addEventListener("click", (content, writer) => {
-    writer = username;
-    writearr.forEach((element, idx) => {
-      var comment = `<span><b>${writer} </b>${element.value}</span><br>`;
-      if (element.value) {
-        content = element.value;
-        commentArea[idx].innerHTML += comment;
-        element.value=" ";
-      }
-    });
+/**
+ * recognize if keycode is Enter or not, (if enter)=> the comment going to display.
+ * (else) when the user writes, the comment button gonna active
+ */
+for (let element of write) {
+  element.addEventListener("keyup", (event) => {
+    event.code==="Enter"?writeComment():comment();
   });
+}
+
+//add event to "게시" button
+for (let element of commentBtn) {
+  element.addEventListener("click", writeComment);
 }
