@@ -19,7 +19,9 @@ header {
   z-index: 1;
   align-items: center;
 }
-
+.comment >span {
+  display: block;
+}
 .logo > span {
   font-family: "Lobster", cursive;
   font-size: 26px;
@@ -236,8 +238,8 @@ header {
   text-decoration: none;
   display: block;
   color: #9f9b9b;
-  font-size: 13px;
-  margin-top: 10px;
+  font-size: 12px;
+  margin-top: 2px;
 }
 span b {
   font-weight: 550;
