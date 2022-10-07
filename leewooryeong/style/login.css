@@ -1,0 +1,74 @@
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.wrapper {
+    width: 320px;
+    height: 365px;
+    border: 1px solid #dbdbdb;
+    margin: 150px auto;
+}
+
+.wrapper .inner {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.wrapper .inner .logo {
+    font-family: "Lobster", cursive, "Nanum Gothic", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.wrapper .inner .login {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.wrapper .inner .login input {
+    padding: 10px 0 10px 8px;
+    margin-top: 7px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    outline: none;
+    background-color: #fafafa;
+}
+
+.wrapper .inner .login button {
+    height: 30px;
+    margin-top: 15px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wrapper .inner .login button.disabled {
+    opacity: 30%;
+    cursor: default;
+}
+
+.wrapper .inner .pwQuestion {
+    color: #0095f6;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.wrapper .inner .pwQuestion a {
+    color: #0095f6;
+}
+.wrapper .inner .pwQuestion a:active {
+    color: #dbdbdb;
+}
