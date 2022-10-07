@@ -36,11 +36,8 @@ function getValue() {
       msg.appendChild(writtenVal);
     }
   } else {
-    if (userAccount.length === 0) {
-      console.log(userAccount.length);
       writtenVal.innerText = "존재하지 않는 계정입니다.";
       msg.appendChild(writtenVal);
-    }
   }
 
 }
