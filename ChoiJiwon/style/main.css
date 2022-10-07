@@ -8,6 +8,7 @@ body {
 }
 
 header {
+  display: flex;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -19,9 +20,7 @@ header {
   z-index: 1;
   align-items: center;
 }
-.comment >span {
-  display: block;
-}
+
 .logo > span {
   font-family: "Lobster", cursive;
   font-size: 26px;
@@ -93,7 +92,7 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 470px;
   height: 760px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border: solid 1px #dbdbdb;
@@ -192,6 +191,7 @@ header {
   text-align: center;
 }
 
+
 .write {
   padding: 10px 10px 15px 15px;
   border: none;
@@ -207,6 +207,15 @@ header {
 
 .write:focus {
   outline: none;
+}
+.oneComment{
+  padding-right: 10px;
+}
+.c-icon{
+  width: 14px;
+  float: right;
+  margin-left: 4px;
+  cursor: pointer;
 }
 
 .f-write {
@@ -238,7 +247,7 @@ header {
   text-decoration: none;
   display: block;
   color: #9f9b9b;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 2px;
 }
 span b {
