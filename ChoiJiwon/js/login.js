@@ -39,6 +39,7 @@ function getValue() {
       writtenVal.innerText = "존재하지 않는 계정입니다.";
       msg.appendChild(writtenVal);
   }
-
 }
+
+
 
