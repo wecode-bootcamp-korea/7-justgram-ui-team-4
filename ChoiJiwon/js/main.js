@@ -7,8 +7,9 @@ const writeArr = Array.from(document.getElementsByClassName("write"));
 
 //add EventListener
 deleteBtn.forEach((e) => {
-  e.addEventListener("click", deleteComment());
+  e.addEventListener("click", deleteComment);
 });
+
 btnArr.forEach((e) => {
   e.addEventListener("click", writeComment);
 });
@@ -41,6 +42,7 @@ function writeComment() {
     newDiv.innerHTML = `<span><b>${writer} </b>${element.value}</span>`;
     newDiv.innerHTML += `<img alt="heart" class="c-icon c-heart" src="image/heart.png">`;
     newDiv.innerHTML += `<img alt="delete" class="c-icon c-delete" src="image/delete.png">`;
+    newDiv.getElementsByClassName(" c-delete")[0].addEventListener("click", deleteComment);
     if (element.value) {
       if (numOfComment < 2) {
         commentArea[idx].appendChild(newDiv);
@@ -58,15 +60,13 @@ function writeComment() {
         let numComment = `<a href="#">댓글 ${numOfComment + 1}개 모두 보기</a>`;
         noOfCommentArea[idx].innerHTML = numComment;
         element.value = "";
-      }
-      //add event listener to new elements
-      for (let element of deleteBtn) {
-        element.addEventListener("click", deleteComment);
+        
       }
     }
   });
 }
 
-function deleteComment() {
+function deleteComment(event) {
   console.log("delete");
+  event.target.parentElement.remove();
 }
