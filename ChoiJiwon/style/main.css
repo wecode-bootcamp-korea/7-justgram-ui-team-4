@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #fafafa;
+}
+
+header {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: #dbdbdb solid 1px;
+  background-color: white;
+  z-index: 1;
+  align-items: center;
+}
+
+.logo > span {
+  font-family: "Lobster", cursive;
+  font-size: 26px;
+}
+
+.bar {
+  line-height: 60px;
+  align-items: center;
+  align-content: stretch;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 960px;
+  justify-content: center;
+}
+
+.bar > img {
+  width: 25px;
+  height: 25px;
+}
+
+.icons > img {
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+.logo {
+  display: inline-block;
+  width: 70px;
+  float: left;
+}
+.icons {
+  display: inline-block;
+  margin-left: 60px;
+}
+.search {
+  width: 270px;
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  vertical-align: middle;
+  background-color: #efefef;
+  float: left;
+  margin: 10px 15px 0px 28%;
+}
+
+.s_input {
+  margin-left: 10px;
+  border: none;
+  background-color: #efefef;
+  font-size: 17px;
+  font-weight: 130;
+}
+.s_input:focus {
+  outline: none;
+}
+
+.feed {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 470px;
+  height: 760px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #dbdbdb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.f-pic {
+  height: 470px;
+}
+
+.f-header {
+  height: 48px;
+}
+
+.profile {
+  border-radius: 70%;
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 10px 15px;
+  position: relative;
+}
+
+.c-profile {
+  width: 23px;
+  height: 23px;
+  border-radius: 70%;
+}
+
+.dot {
+  width: 18px;
+  margin: auto 0px 15px 370px;
+}
+
+.f-header > span {
+  position: absolute;
+  left: 80;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#glass {
+  color: #9f9b9b;
+}
+
+.f-menu {
+  height: 40px;
+}
+
+.f-like {
+  height: 28px;
+  line-height: 30px;
+  display: flex;
+  margin-top: 4px;
+}
+
+.f-like > img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+.f-like > span {
+  font-size: 13px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.i-heart {
+  width: 24px;
+  margin-left: 10px;
+}
+
+.i-send {
+  width: 23px;
+  margin-left: 8px;
+}
+
+.i-bookmark {
+  width: 23px;
+  margin-left: 320px;
+}
+
+.i-comment {
+  width: 30px;
+  margin-top: 6px;
+  margin-left: 8px;
+}
+
+.f-comment {
+  height: 130px;
+}
+
+.f-comment > span {
+  font-size: 13px;
+  text-align: center;
+}
+
+
+.write {
+  padding: 10px 10px 15px 15px;
+  border: none;
+  width: 389px;
+  vertical-align: center;
+}
+
+.write::placeholder {
+  font-weight: 540;
+  font-size: 14px;
+  color: #9f9b9b;
+}
+
+.write:focus {
+  outline: none;
+}
+.oneComment{
+  padding-right: 10px;
+}
+.c-icon{
+  width: 14px;
+  float: right;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.f-write {
+  line-height: 47px;
+  display: flex;
+}
+
+.emoji {
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.c-submit {
+  border: none;
+  font-weight: 800;
+  color: #0095f6;
+  background-color: white;
+}
+.c-submit:disabled {
+  cursor: default;
+  color: #b2dffc;
+}
+.f-comment {
+  padding: 5px 0px 10px 10px;
+}
+.f-comment a {
+  text-decoration: none;
+  display: block;
+  color: #9f9b9b;
+  font-size: 13px;
+  margin-top: 2px;
+}
+span b {
+  font-weight: 550;
+  font-size: 14px;
+}
+.f-comment span {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.f-write {
+  border-top: solid 1px #dbdbdb;
+}
+
+p {
+  font-size: 9px;
+  color: #8b8585;
+}
