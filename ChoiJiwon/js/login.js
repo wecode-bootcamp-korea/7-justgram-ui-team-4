@@ -18,7 +18,7 @@ const login = () => {
  */
 for (let element of input) {
   element.addEventListener("keyup", (event) => {
-    event.code==="Enter"?getValue():login();
+    event.code === "Enter" ? getValue() : login();
   });
 }
 
@@ -29,15 +29,15 @@ function getValue() {
   if (ids.includes(input[0].value)) {
     let idx = ids.indexOf(input[0].value);
     if (data[idx].pw == input[1].value) {
-      window.localStorage.setItem('user',input[0].value);
-      location.href = "../main.html";    
+      window.localStorage.setItem('user', input[0].value);
+      location.href = "../main.html";
     } else {
       writtenVal.innerText = "비밀번호가 잘못되었습니다.";
       msg.appendChild(writtenVal);
     }
   } else {
-      writtenVal.innerText = "존재하지 않는 계정입니다.";
-      msg.appendChild(writtenVal);
+    writtenVal.innerText = "존재하지 않는 계정입니다.";
+    msg.appendChild(writtenVal);
   }
 }
 

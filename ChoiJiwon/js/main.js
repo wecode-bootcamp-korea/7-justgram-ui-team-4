@@ -66,7 +66,7 @@ function writeComment() {
   });
 }
 
+//delete 하면 num comment 댓글갯수 하나 줄이고 숨겨진 댓글 풀기. 
 function deleteComment(event) {
-  console.log("delete");
   event.target.parentElement.remove();
 }
